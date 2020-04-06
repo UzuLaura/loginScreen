@@ -1,0 +1,153 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1em;
+}
+main {
+  display: flex;
+}
+.login-section {
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+.hide {
+  display: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+i {
+  display: inline-block;
+  width: 30px;
+  padding: 0 5px;
+}
+/* ---------------------------------------- */
+/* Headings and Paragraphs */
+h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 1.75em;
+  margin-bottom: 30px;
+}
+.login-section > p {
+  font-size: 1.25em;
+  color: #858585;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #717072;
+}
+a:hover {
+  color: #176ae6;
+}
+.info > p {
+  font-size: 1.5em;;
+}
+footer > p {
+  color: lightgray;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
+/* ---------------------------------------- */
+/* Login Section */
+input {
+  border: none;
+  text-transform: uppercase;
+}
+input:focus {
+  outline: none;
+}
+input[type=submit] {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  background: #176ae6;
+  width: 100%;
+  color: #ffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.input-container {
+  height: 40px;
+  border: 1px solid #d4d4d4;
+  border-radius: 50px;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+.input-container input[type=submit] {
+  border: 1px solid #176ae6;
+}
+.input-container:focus-within {
+  border: 1px solid #176ae6;
+}
+/* ---------------------------------------- */
+/* Images */
+#head-img {
+  margin: 30px 0;
+}
+
+/* RESPONSIVE FOR PC*/
+@media (min-width: 1024px) {
+  /* Global and Login Section*/
+  .login-section {
+    position: relative;
+    width: 33%;
+  }
+  .hero {
+    background: #78abec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 67%;
+    position: relative;
+  }
+  .info {
+    width: 740px;
+    margin-bottom: 50px;
+    color: white;
+    justify-self: center;
+  }
+  .hide-web {
+    display: none;
+  }
+  /* ---------------------------------------- */
+  /* Headings and Paragraphs */
+  h1 {
+    font-size: 2.6em;
+    margin-bottom: 20px;
+  }
+  .info > p {
+    color: white;
+  }
+  footer > p {
+    font-size: 1em;
+  }
+  /* ---------------------------------------- */
+  /* Images */
+  #leaves-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #human-img {
+    position: absolute;
+    top: 250px;
+  }
+  #head-img {
+    margin: 100px 0 20px 0;
+  }
+}
